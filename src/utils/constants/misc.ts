@@ -77,93 +77,93 @@ export const Products = [
 ] as const;
 
 export const REVIEWS = [
-    // Optix Review
+    // Lightning-fast Websites Review
     {
-        name: "Samantha Lewis",
-        username: "@samantha_lewis",
-        avatar: "https://randomuser.me/api/portraits/women/6.jpg",
+        name: "Ava Morgan",
+        username: "@ava_morgan",
+        avatar: "https://randomuser.me/api/portraits/women/44.jpg",
         rating: 5,
-        review: "Optix has automated so many of my repetitive tasks. The time savings are unreal! This app is a lifesaver for any busy professional."
+        review: "They built us a lightning-fast website that feels silky smooth on every device. It honestly gave our brand a huge boost in credibility."
     },
     
-    // Inquirix Review
+    // Interactive Dashboards Review
     {
-        name: "Rachel Anderson",
-        username: "@rachel_anderson",
-        avatar: "https://randomuser.me/api/portraits/women/5.jpg",
+        name: "Madison Reed",
+        username: "@madison_reed",
+        avatar: "https://randomuser.me/api/portraits/women/15.jpg",
         rating: 5,
-        review: "Inquirix has made studying PDFs a game-changer. Now, I can interact with content and get answers instantly. Love the simplicity!"
+        review: "Our new dashboard is interactive, clean, and makes data analysis fun instead of a chore. The speed blew us away!"
     },
 
-    // Troika Hub (3D & VFX by Chaitanya) Review
+    // Responsive Websites Review
     {
-        name: "Olivia Turner",
-        username: "@olivia_turner",
-        avatar: "https://randomuser.me/api/portraits/women/8.jpg",
+        name: "Hannah Scott",
+        username: "@hannah_scott",
+        avatar: "https://randomuser.me/api/portraits/women/32.jpg",
         rating: 5,
-        review: "Troika Hub’s 3D models are on another level! Chaitanya’s work helped our project come alive. Phenomenal detail and artistry."
+        review: "Finally — a website that looks and works perfect on mobile and desktop. Their attention to detail is insane."
     },
 
-    // Conferix Review
+    // Communication & Collaboration Review
     {
-        name: "Alexander Kim",
-        username: "@alexander_kim",
-        avatar: "https://randomuser.me/api/portraits/men/8.jpg",
+        name: "Michael Davis",
+        username: "@michael_davis",
+        avatar: "https://randomuser.me/api/portraits/men/36.jpg",
         rating: 4,
-        review: "Great for collaboration. Has a few minor tweaks I’d love, but overall, it’s now my preferred conferencing tool!"
+        review: "Communication was solid and they kept us updated. The only hiccup was a slight delay in delivery, but the final result was worth it."
     },
 
-    // Mentorship and AI Generation by Pratyush Review
+    // Talented Team Review
     {
-        name: "Sophia Carter",
-        username: "@sophia_carter",
-        avatar: "https://randomuser.me/api/portraits/women/9.jpg",
+        name: "Isla Thompson",
+        username: "@isla_thompson",
+        avatar: "https://randomuser.me/api/portraits/women/18.jpg",
         rating: 5,
-        review: "Pratyush’s mentorship and AI tools have been invaluable. As a beginner, I couldn’t ask for a better guide in this field."
+        review: "Such a creative and skilled team! They nailed everything from visuals to backend architecture seamlessly."
     },
 
-    // Optix Review
+    // Ideation to Hosting Review
     {
-        name: "David Chen",
-        username: "@david_chen",
-        avatar: "https://randomuser.me/api/portraits/men/7.jpg",
-        rating: 4,
-        review: "Very intuitive and powerful automation. Still learning some features, but it’s already streamlined my work."
-    },
-
-    // Troika Hub (3D & VFX by Chaitanya) Review
-    {
-        name: "Ethan Wright",
-        username: "@ethan_wright",
-        avatar: "https://randomuser.me/api/portraits/men/9.jpg",
+        name: "Benjamin Lee",
+        username: "@benjamin_lee",
+        avatar: "https://randomuser.me/api/portraits/men/27.jpg",
         rating: 5,
-        review: "Can’t recommend Troika Hub enough for VFX. Their team goes above and beyond to deliver stunning visuals. Thank you!"
+        review: "They took us from rough ideas to a polished, hosted site in record time. The whole process felt effortless."
     },
 
-    // Inquirix Review
+    // Scaling Up Review
     {
-        name: "Liam Walker",
-        username: "@liam_walker",
-        avatar: "https://randomuser.me/api/portraits/men/6.jpg",
-        rating: 4,
-        review: "Great tool for turning documents into something so much more. It’s boosted my productivity beyond what I imagined."
-    },
-
-    // Conferix Review
-    {
-        name: "Isabella Green",
-        username: "@isabella_green",
-        avatar: "https://randomuser.me/api/portraits/women/7.jpg",
+        name: "Owen Martinez",
+        username: "@owen_martinez",
+        avatar: "https://randomuser.me/api/portraits/men/29.jpg",
         rating: 5,
-        review: "Conferix has made team meetings more interactive. Love the clarity and the extra features. It’s exactly what we needed."
+        review: "Their scaling expertise let us handle thousands of users with no slowdowns. Truly a partner for long-term growth."
     },
 
-    // Mentorship and AI Generation by Pratyush Review
+    // Productivity Boost Review
     {
-        name: "Lucas Foster",
-        username: "@lucas_foster",
-        avatar: "https://randomuser.me/api/portraits/men/10.jpg",
+        name: "James Walker",
+        username: "@james_walker",
+        avatar: "https://randomuser.me/api/portraits/men/42.jpg",
         rating: 4,
-        review: "The AI generation tools are extremely powerful and user-friendly. Pratyush’s mentorship was a bonus that made the learning curve easier!"
+        review: "The tools boosted our team’s productivity a lot. A few minor UI quirks exist, but nothing that breaks the workflow."
+    },
+
+    // Team Collaboration Review
+    {
+        name: "Ella White",
+        username: "@ella_white",
+        avatar: "https://randomuser.me/api/portraits/women/29.jpg",
+        rating: 5,
+        review: "Collaboration was smooth — they felt like an extension of our own team. The final delivery impressed everyone here."
+    },
+
+    // Full-service Development Review
+    {
+        name: "Henry Adams",
+        username: "@henry_adams",
+        avatar: "https://randomuser.me/api/portraits/men/23.jpg",
+        rating: 5,
+        review: "From brainstorming features to deploying the site, they handled it all. Truly a full-service development team."
     },
 ] as const;

@@ -16,10 +16,10 @@ const Footer = () => {
                             <img src="\icons\logo.png" alt="Logo" className="h-8 w-auto" />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                           Join us in this wonderful project!
+                           Join us in our Journey!
                         </p>
                         <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by <Link href="" className="font-semibold ml-1">Sulaiman</Link> 
+                            Made by <Link href="" className="font-semibold ml-1">Beavers</Link> 
                         </span> 
                     </div>
                     {/* todo put portfolio */}
@@ -63,28 +63,28 @@ const Footer = () => {
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="https://x.com/TroikaHub" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://x.com/Beavers" className="hover:text-foreground transition-all duration-300">
                                             Facebook
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="https://x.com/TroikaHub" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://x.com/Beavers" className="hover:text-foreground transition-all duration-300">
                                             Instagram
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="https://x.com/TroikaHub" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://x.com/Beavers" className="hover:text-foreground transition-all duration-300">
                                             Twitter
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="https://www.linkedin.com/company/troika-hub" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://www.linkedin.com/company/Beavers" className="hover:text-foreground transition-all duration-300">
                                             LinkedIn
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="https://github.com/Troika-Hub" className="hover:text-foreground transition-all duration-300">
-                                            github
+                                        <Link href="https://github.com/Beavers" className="hover:text-foreground transition-all duration-300">
+                                            Github
                                         </Link>
                                     </li>
                                 </ul>
@@ -99,7 +99,7 @@ const Footer = () => {
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="mt-2">
-                                        <Link href="/resources/blog" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://dematix.vercel.app" className="hover:text-foreground transition-all duration-300">
                                             Blog
                                         </Link>
                                     </li>
@@ -143,13 +143,13 @@ const Footer = () => {
             <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
                 <AnimationContainer delay={0.6}>
                     <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                        &copy; {new Date().getFullYear()} Troika Hub INC. All rights reserved.
+                        &copy; {new Date().getFullYear()} Beavers INC. All rights reserved.
                     </p>
                 </AnimationContainer>
             </div>
 
             <div className="h-[20rem] lg:h-[20rem] hidden md:flex items-center justify-center">
-                <TextHoverEffect text="TROIKA" />
+                <TextHoverEffect text="BEAVERS" />
             </div>
         </footer>
     )

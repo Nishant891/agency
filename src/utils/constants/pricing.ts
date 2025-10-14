@@ -122,22 +122,22 @@ export const PLANS = [
     },
     {
         name: "Founder",
-        info: "Lead Dev + CEO",
+        info: "Developer",
         price: {
-            monthly: "S Sulaiman",
+            monthly: "Nishant Sharma",
             
         },
         Products: [
             { text: "Lead Developer & Creator" },
-            { text: "4+ Years of Experience", tooltip:"Specialized in building SaaS platforms and Designing Websites"},
-            { text: "Projects Built", tooltip:"Inquirix, Optix, Conferix, and other innovative tech solutions." },
-            { text: "Previous Roles", tooltip: "Interned at Deloitte and Capgemini; Worked at early stage government funded startups." },
-            { text: " Web3 & Full Stack Developer"},
-            { text: "Tech Stack", tooltip: "TypeScript React TRPC AWS Azure Next.js Rust/Solana Three.js GoLang and Various Databases and ORMs" },
+            { text: "3+ Years of Experience", tooltip:"Specialized in building SaaS platforms and Designing Websites"},
+            { text: "Projects Built", tooltip:"Deckit, Alpha Exchange, SEC Filing Analyzer, and other innovative tech solutions." },
+            { text: "Previous Roles", tooltip: "Interned at Nutanix; Worked at well funded startups." },
+            { text: "SRE & Full Stack Developer"},
+            { text: "Tech Stack", tooltip: "TypeScript React GCP AWS Azure Next.js Cpp Three.js Linux and Various Databases and ORMs" },
         ],
         btn: {
             text: "Contact",
-            href: "https://sulaiweb.me/",//Portfolio todo lol
+            href: "https://dematrix.vercel.app/",//Portfolio todo lol
             variant: "purple",
         }
     },

@@ -168,7 +168,11 @@ const config = {
           "100%": {
             transform: "rotate(360deg)",
           },
-        }
+        },
+        "sparkle": {
+          "0%, 100%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.7", transform: "scale(1.1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -185,6 +189,7 @@ const config = {
         "rotate": "rotate 3s linear infinite both",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
         "loading": "loading 0.5s linear infinite",
+        "sparkle": "sparkle 2s ease-in-out infinite",
       },
     },
   },

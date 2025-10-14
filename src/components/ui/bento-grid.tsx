@@ -13,24 +13,24 @@ import { Label } from "./label";
 export const CARDS = [
     {
         Icon: FileText,
-        name: "Inquirix",
-        description: "Transforming PDFs into Interactive Knowledge.",
-        href: "#", //Link to inquirix
+        name: "Deckit",
+        description: "Create amazing PPTs with AI",
+        href: "https://deckit.ai/workspace", //Link to inquirix
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
         background: (
             <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
                 <CardHeader>
                     <CardTitle>
-                        PDFs into Chatbots
+                        AI powered PPTs
                     </CardTitle>
                     <CardDescription>
-                        Turn PDFs into AI chatbots for quick insights and answers
+                        Create and edit amazing PPTs with AI
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="-mt-4">
                     <Label>
-                        Upload Your PDF
+                        Upload Documents
                     </Label>
                     <Input
                         type="file"
@@ -43,30 +43,48 @@ export const CARDS = [
     },
     {
         Icon: Rotate3d,
-        name: "Amazing VFX Projects by Creators Who Bring Your Imagination to Life.",
-        description: "No need to search for solutions—our experts are here to bring your vision to life.",
-        href: "#", //Put caisard ka portfolio here
+        name: "Alpha Exchange",
+        description: "High speed trade execution and endless Liquidity with AI powered analytics for your portfolio",
+        href: "https://www.fintechsandbox.org/startup/alpha-exchange/",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
             <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
-                <Input placeholder="Type to search..." />
+                <Input placeholder="Search stocks, options, crypto..." />
                 <div className="mt-1 cursor-pointer">
-                   <div className="px-4 py-2 hover:bg-muted rounded-md">Missing Texture Mapping: UV Coordinates Undefined</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">Invalid Node Setup: Broken Shader Link Detected</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">Stack Overflow</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">Frame Interpolation Error: Keyframe Gap Detected</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">Mocked</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">Mocked</div>
-                </div> 
+                    <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
+                        <span>AAPL Buy Order</span>
+                        <span className="text-green-600 text-sm">+2.3%</span>
+                    </div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
+                        <span>TSLA Options Chain</span>
+                        <span className="text-blue-600 text-sm">IV: 45.2%</span>
+                    </div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
+                        <span>BTC/USD Perpetual</span>
+                        <span className="text-orange-600 text-sm">$42,150</span>
+                    </div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
+                        <span>Portfolio Analytics</span>
+                        <span className="text-purple-600 text-sm">Beta: 1.2</span>
+                    </div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
+                        <span>Risk Management</span>
+                        <span className="text-red-600 text-sm">VaR: -$2.1K</span>
+                    </div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
+                        <span>AI Trade Signals</span>
+                        <span className="text-green-600 text-sm">Strong Buy</span>
+                    </div>
+                </div>
             </Command>
         ),
     },
     {
         Icon: WaypointsIcon,
-        name: "Optix: Where Automation Meets Efficiency",
-        description: "Optix simplifies your workflow by automating the repetitive tasks that take up your time—so you can focus on what truly matters.",
-        href: "#", //Optix ka site link
+        name: "SEC Filings Analysis",
+        description: "Analyze 10-K, 10-Q, 8-K FORMS 3,4,5 SEC Filings for hundereds of companies",
+        href: "https://sec-filing-analyzer.vercel.app/", //Optix ka site link
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (

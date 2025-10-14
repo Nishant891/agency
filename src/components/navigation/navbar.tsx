@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn, NAV_LINKS } from "@/utils";
 import { useClerk } from "@clerk/nextjs";
-import { LucideIcon, ZapIcon } from "lucide-react";
+import { LucideIcon, Send } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
@@ -20,8 +20,6 @@ import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
 
 const Navbar = () => {
-
-    const { user } = useClerk();
 
     const [scroll, setScroll] = useState(false);
 
@@ -42,21 +40,21 @@ const Navbar = () => {
 
     return (
         <header className={cn(
-            "sticky top-0 inset-x-0 h-14 w-full border-b border-transparent z-[99999] select-none",
+            "sticky top-0 inset-x-0 h-24 w-full border-b border-transparent z-[99999] select-none",
             scroll && "border-background/80 bg-background/40 backdrop-blur-md"
         )}>
             <AnimationContainer reverse delay={0.1} className="size-full">
                 <MaxWidthWrapper className="flex items-center justify-between">
-                    <div className="flex items-center space-x-12">
-                        <Link href="/#home">
-                            <span className="text-lg font-bold font-heading !leading-none">
-                               
-                            <img src="\icons\logo.png" alt="Logo" className="h-8 w-8 mr-2 inline-block" />
-                                Troika Hub
-                            
-                            </span>
-                        </Link>
+                    <Link href="/#home">
+                        <span className="text-lg font-bold font-heading !leading-none">
+                           
+                        <img src="\icons\logo.png" alt="Logo" className="h-8 w-8 mr-2 inline-block" />
+                            Troika Hub
+                        
+                        </span>
+                    </Link>
 
+                    <div className="flex items-center space-x-8">
                         <NavigationMenu className="hidden lg:flex">
                             <NavigationMenuList>
                                 {NAV_LINKS.map((link) => (
@@ -112,30 +110,20 @@ const Navbar = () => {
                             </NavigationMenuList>
                         </NavigationMenu>
 
-                    </div>
-
-                    <div className="hidden lg:flex items-center">
-                        {user ? (
-                            <div className="flex items-center">
-                                <Link href="/dashboard" className={buttonVariants({ size: "sm", })}>
-                                    Dashboard
-                                </Link>
-                            </div>
-                        ) : (
+                        <div className="hidden lg:flex items-center">
                             <div className="flex items-center gap-x-4">
-                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                                {/* <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
                                     Wishlist
-                                </Link>
-                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", })}> 
+                                </Link> */}
+                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=nishant19072003@gmail.com" className="bg-gray-50 text-gray-950 rounded-full flex justify-center items-center px-4 py-2"> 
                                     Get in Touch
-                                    <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
+                                    <Send className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
                                 </Link>
                             </div>
-                        )}
-                        {/* todo */}
-                    </div>
+                        </div>
 
-                    <MobileNavbar />
+                        <MobileNavbar />
+                    </div>
 
                 </MaxWidthWrapper>
             </AnimationContainer>
