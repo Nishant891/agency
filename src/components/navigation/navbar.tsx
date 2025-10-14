@@ -49,7 +49,7 @@ const Navbar = () => {
                         <span className="text-lg font-bold font-heading !leading-none">
                            
                         <img src="\icons\logo.png" alt="Logo" className="h-8 w-8 mr-2 inline-block" />
-                            Troika Hub
+                            Yumeo
                         
                         </span>
                     </Link>
