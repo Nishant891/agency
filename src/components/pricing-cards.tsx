@@ -22,7 +22,7 @@ const PricingCards = () => {
         <Tabs defaultValue="monthly" className="w-full flex flex-col items-center justify-center">
             
 
-            <TabsContent value="monthly" className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full md:gap-8 flex-wrap max-w-5xl mx-auto pt-6">
+            <TabsContent value="monthly" className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full md:gap-8 flex-wrap justify-center items-center max-w-5xl mx-auto pt-6">
                 {PLANS.map((plan) => (
                     <Card
                         key={plan.name}
