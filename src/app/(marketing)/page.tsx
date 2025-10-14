@@ -251,7 +251,7 @@ const HomePage = async () => {
                             What our users are saying
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Here&apos;s what some of our users have to say about Troika & its Products.
+                            Here&apos;s what some of our users have to say about Yumeo & its Products.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -354,18 +354,8 @@ const HomePage = async () => {
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                                 Whether you have a project in mind or just want to explore ideas, we&apos;re here to help make it happen.
                             </p>
-                            <div className="mt-6">
-                                {/* <Button asChild>
-                                    <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com">
-                                        Contact Us!
-                                        <ArrowRightIcon className="w-4 h-4 ml-2" />
-                                    </Link>
-                                </Button> */}
-                            </div>
                         </div>
-                        {/* <div className="dark">
-<FloatingDockDemo />
-</div> */}<FloatingDockDemo />
+                <FloatingDockDemo />
                     </LampContainer>
                 </AnimationContainer>
             </MaxWidthWrapper>

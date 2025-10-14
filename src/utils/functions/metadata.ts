@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const generateMetadata = ({
-    title = "Troika Hub - Crafting Digital Solutions with Precision and Creativity",
-    description = "Troika Hub - Where ideas come to life with precision and creativity. Explore our innovative projects and services.",
-    image = "/Troika_meta_data_picture.png",
+    title = "Yumeo - Crafting Digital Solutions with Precision and Creativity",
+    description = "Yumeo - Where ideas come to life with precision and creativity. Explore our innovative projects and services.",
+    image = "/Yumeo_meta_data_picture.png",
     icons = [
         {
             rel: "apple-touch-icon",

@@ -112,9 +112,6 @@ const Navbar = () => {
 
                         <div className="hidden lg:flex items-center">
                             <div className="flex items-center gap-x-4">
-                                {/* <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                                    Wishlist
-                                </Link> */}
                                 <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=nishant19072003@gmail.com" className="bg-gray-50 text-gray-950 rounded-full flex justify-center items-center px-4 py-2"> 
                                     Get in Touch
                                     <Send className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
