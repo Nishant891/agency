@@ -100,27 +100,6 @@
 // export const WORKSPACE_LIMIT = 2;
 export const PLANS = [
     {
-        name: "Co-Founder",
-        info: "Lead Creative Department",
-        price: {
-            monthly: "Chaitayna.S ",
-            
-        },
-        Products: [
-            { text: "Lead Designer & SM Manager" },
-            { text: "1.5+ Years of Experience", tooltip:"Specialized in 3D, VFX and Logo illustrations and Photoshop" },
-            { text: "Projects Built", tooltip:"McLaren 720S, Star Wars TIE Fighter, Space Marine, iPhone mock adverts, and other groundbreaking 3D creations." },
-            { text: "Previous Roles", tooltip: "IIDE Digital Marketting Intern" },
-            { text: "Blender Artist", },
-            { text: "Tech Stack", tooltip: "Blender, Adobe Illustrator, Adobe after effects, Adobe premiere pro, Adobe photoshop, Autodesk Maya" },
-        ],
-        btn: {
-            text: "Contact",
-            href: "https://www.linkedin.com/in/chaitanyasardana/",//portfolio todo
-            variant: "default",
-        }
-    },
-    {
         name: "Founder",
         info: "Developer",
         price: {
@@ -139,27 +118,6 @@ export const PLANS = [
             text: "Contact",
             href: "https://dematrix.vercel.app/",//Portfolio todo lol
             variant: "purple",
-        }
-    },
-    {
-        name: "Co-Founder",
-        info: "Founding Engineer",
-        price: {
-            monthly: "Pratyush Bose",
-            yearly: Math.round(49 * 12 * (1 - 0.12)),
-        },
-        Products: [
-            { text: "CTO & Project Lead" },
-            { text: "2 Years of Experience", tooltip:"Specialized in cloud infrastructure and databse management"},
-            { text: "Projects Built", tooltip:"AI SaaS platform, Trading website, AI resume builder, Android to-do app, and other next-gen tech solutions." },
-            { text: "Previous Roles", tooltip: "Codemithra Intern" },
-            { text: "Full Stack Developer",},
-            { text: "Tech Stack", tooltip: "Java, SQL, Next.js, Tailwind, Typescript, Prismadb, MongoDB, AWS" },
-        ],
-        btn: {
-            text: "Contact",
-            href: "www.linkedin.com/in/pratyush-bose",//portfolio todo lol
-            variant: "default",
         }
     }
 ];

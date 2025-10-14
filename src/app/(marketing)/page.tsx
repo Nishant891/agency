@@ -177,7 +177,7 @@ const HomePage = async () => {
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
                             From Concept to Creation in 3 Simple Steps                        </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            At Beavers, we bring your ideas to life with a seamless, 3-step process designed for visionaries like you.
+                            At Yumeo, we bring your ideas to life with a seamless, 3-step process designed for visionaries like you.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -211,7 +211,7 @@ const HomePage = async () => {
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="Meet The Team" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Meet the Team of Beavers
+                            Meet the Team of Yumeo
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
                             A talented team of developers, SREs and innovators working together to bring bold ideas to life.
@@ -226,7 +226,7 @@ const HomePage = async () => {
                         <div className="flex items-center gap-2">
                             <Triangle className="w-5 h-5 text-foreground" />
                             <span className="text-muted-foreground">
-                                Beavers symbolize teamwork, resilience, and building together.
+                                Yumeo symbolize teamwork, resilience, and building together.
                             </span>
                         </div>
 
@@ -349,7 +349,7 @@ const HomePage = async () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                                Reach Out to Beavers and Bring Your Vision to Life
+                                Reach Out to Yumeo and Bring Your Vision to Life
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                                 Whether you have a project in mind or just want to explore ideas, we&apos;re here to help make it happen.

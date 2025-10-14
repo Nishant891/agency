@@ -12,7 +12,7 @@ const Privacy = () => {
                     Last updated: 17th June 2025
                 </p>
                 <p className="mt-4">
-                    At <strong>Beavers</strong>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.
+                    At <strong>Yumeo</strong>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.
                 </p>
 
                 <h2 className="text-xl font-medium mt-8">
@@ -171,7 +171,7 @@ const Privacy = () => {
                 </p>
 
                 <p className="mt-8 font-medium">
-                    By using Beavers, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy.
+                    By using Yumeo, you acknowledge that you have read, understood, and agree to the terms of this Privacy Policy.
                 </p>
             </AnimationContainer>
         </MaxWidthWrapper>

@@ -1,13 +1,13 @@
 export const FAQ = [
     {
         id: "item-1",
-        question: "What is Beavers?",
-        answer: "Beavers is a fintech and AI platform offering innovative solutions like AI-powered PPT creation, high-speed trading, SEC filings analysis, and comprehensive financial analytics tools.",
+        question: "What is Yumeo?",
+        answer: "Yumeo is a fintech and AI platform offering innovative solutions like AI-powered PPT creation, high-speed trading, SEC filings analysis, and comprehensive financial analytics tools.",
     },
     {
         id: "item-2",
-        question: "What products does Beavers offer?",
-        answer: "Beavers provides products like Deckit (AI-powered PPT creation), Alpha Exchange (high-speed trading platform), SEC Filings Analysis tools, and AI-driven portfolio analytics with real-time market data.",
+        question: "What products does Yumeo offer?",
+        answer: "Yumeo provides products like Deckit (AI-powered PPT creation), Alpha Exchange (high-speed trading platform), SEC Filings Analysis tools, and AI-driven portfolio analytics with real-time market data.",
     },
     {
         id: "item-3",
@@ -16,7 +16,7 @@ export const FAQ = [
     },
     {
         id: "item-4",
-        question: "Can I use multiple Beavers products with one account?",
+        question: "Can I use multiple Yumeo products with one account?",
         answer: "Yes! Once you create an account, you can access all our products seamlessly using the same credentials, with unified portfolio tracking across all tools.",
     },
     {
@@ -36,7 +36,7 @@ export const FAQ = [
     },
     {
         id: "item-8",
-        question: "What payment methods does Beavers accept?",
+        question: "What payment methods does Yumeo accept?",
         answer: "We accept credit cards, bank transfers, cryptocurrency payments, and institutional wire transfers. All transactions are secured with enterprise-grade encryption.",
     },
     {
@@ -46,7 +46,7 @@ export const FAQ = [
     },
     {
         id: "item-10",
-        question: "How can I get started with Beavers?",
+        question: "How can I get started with Yumeo?",
         answer: "Sign up on our website to start with free access to basic features. Begin with Deckit for AI presentations, explore SEC filings analysis, or dive into Alpha Exchange for advanced trading with AI analytics.",
     },
 ];

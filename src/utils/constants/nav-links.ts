@@ -2,12 +2,12 @@ import { Calendar, FileText, HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon,
 
 export const NAV_LINKS = [
     {
-        title: "Templates",
-        href: "/templates",
+        title: "Projects",
+        href: "/projects",
     },
     {
-        title: "Components",
-        href: "/components",
+        title: "Pricing",
+        href: "/pricing",
     },
     {
         title: "Developers",
