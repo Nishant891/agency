@@ -30,27 +30,22 @@ const Footer = () => {
                         <AnimationContainer delay={0.2}>
                             <div className="">
                                 <h3 className="text-base font-medium text-white">
-                                    Product
+                                    Yumeo
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Products
+                                        <Link href="#projects" className="hover:text-foreground transition-all duration-300">
+                                            Projects
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="/pricing" className="hover:text-foreground transition-all duration-300">
                                             Pricing
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Testimonials
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Integration
+                                        <Link href="/achivements" className="hover:text-foreground transition-all duration-300">
+                                            Achivements
                                         </Link>
                                     </li>
                                 </ul>
@@ -59,20 +54,10 @@ const Footer = () => {
                         <AnimationContainer delay={0.3}>
                             <div className="mt-10 md:mt-0 flex flex-col">
                                 <h3 className="text-base font-medium text-white">
-                                    Integrations
+                                    Social
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="https://x.com/yumeo" className="hover:text-foreground transition-all duration-300">
-                                            Facebook
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="https://x.com/yumeo" className="hover:text-foreground transition-all duration-300">
-                                            Instagram
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
                                         <Link href="https://x.com/yumeo" className="hover:text-foreground transition-all duration-300">
                                             Twitter
                                         </Link>
@@ -99,7 +84,7 @@ const Footer = () => {
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="mt-2">
-                                        <Link href="https://dematix.vercel.app" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://dematrix.vercel.app/" className="hover:text-foreground transition-all duration-300">
                                             Blog
                                         </Link>
                                     </li>
@@ -118,7 +103,7 @@ const Footer = () => {
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="/developers" className="hover:text-foreground transition-all duration-300">
                                             About Us
                                         </Link>
                                     </li>

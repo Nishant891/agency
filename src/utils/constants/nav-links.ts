@@ -1,38 +1,49 @@
-import { Calendar, FileText, HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, NewspaperIcon, QrCodeIcon, Rotate3D, WaypointsIcon } from "lucide-react";
+import {
+  Calendar,
+  FileText,
+  HelpCircleIcon,
+  LineChartIcon,
+  Link2Icon,
+  LockIcon,
+  NewspaperIcon,
+  QrCodeIcon,
+  Rotate3D,
+  WaypointsIcon,
+} from "lucide-react";
 
 export const NAV_LINKS = [
-    {
-        title: "Projects",
-        href: "/projects",
-    },
-    {
-        title: "Pricing",
-        href: "/pricing",
-    },
-    {
-        title: "Developers",
-        href: "/developers",
-    },
-    {
-        title: "Resources",
-        href: "/resources",
-        menu: [
-            {
-                title: "Blog",
-                tagline: "Read articles on the latest trends in tech.",
-                href: "https://dematrix.vercel.app",
-                icon: NewspaperIcon,
-            },
-            {
-                title: "Help",
-                tagline: "Get answers to your questions.",
-                href: "/resources/help",
-                icon: HelpCircleIcon,
-            },
-        ]
-    },
-    {
-        title: "Achievements",
-        href: "/achievements",
-    },
+  {
+    title: "Projects",
+    href: "/#projects", // Changed from "/" to "/#projects"
+  },
+  {
+    title: "Pricing",
+    href: "/pricing",
+  },
+  {
+    title: "Developers",
+    href: "/developers",
+  },
+  {
+    title: "Resources",
+    href: "/resources",
+    menu: [
+      {
+        title: "Blog",
+        tagline: "Read articles on the latest trends in tech.",
+        href: "https://dematrix.vercel.app",
+        icon: NewspaperIcon,
+      },
+      {
+        title: "Help",
+        tagline: "Get answers to your questions.",
+        href: "/resources/help",
+        icon: HelpCircleIcon,
+      },
+    ],
+  },
+  {
+    title: "Achievements",
+    href: "/achievements",
+  },
 ];

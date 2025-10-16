@@ -77,6 +77,14 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#projects {
+  scroll-margin-top: 6rem; /* Adjust based on your navbar height */
+}
+
 html.light {
   --bg: #fff;
   --text: #222;

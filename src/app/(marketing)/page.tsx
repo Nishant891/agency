@@ -20,11 +20,7 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import {
-  ArrowRightIcon,
-  StarIcon,
-  Triangle,
-} from "lucide-react";
+import { ArrowRightIcon, StarIcon, Triangle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
@@ -130,26 +126,31 @@ const HomePage = async () => {
       </MaxWidthWrapper>
 
       {/* Products Section */}
-      <MaxWidthWrapper className="pt-10">
-        <AnimationContainer delay={0.1}>
-          <div className="flex flex-col w-full items-center lg:items-center justify-center py-8">
-            <MagicBadge title="Projects" />
-            <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-              Crafted for Visionaries Like You
-            </h2>
-            <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-              We create some of the most amazing and innovative products.
-            </p>
-          </div>
-        </AnimationContainer>
-        <AnimationContainer delay={0.2}>
-          <BentoGrid className="py-8">
-            {CARDS.map((feature, idx) => (
-              <BentoCard key={idx} {...feature} />
-            ))}
-          </BentoGrid>
-        </AnimationContainer>
-      </MaxWidthWrapper>
+      {/* Products Section */}
+      <div id="projects">
+        {" "}
+        {/* Add this wrapper with ID */}
+        <MaxWidthWrapper className="pt-10">
+          <AnimationContainer delay={0.1}>
+            <div className="flex flex-col w-full items-center lg:items-center justify-center py-8">
+              <MagicBadge title="Projects" />
+              <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
+                Crafted for Visionaries Like You
+              </h2>
+              <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
+                We create some of the most amazing and innovative products.
+              </p>
+            </div>
+          </AnimationContainer>
+          <AnimationContainer delay={0.2}>
+            <BentoGrid className="py-8">
+              {CARDS.map((feature, idx) => (
+                <BentoCard key={idx} {...feature} />
+              ))}
+            </BentoGrid>
+          </AnimationContainer>
+        </MaxWidthWrapper>
+      </div>
 
       {/* Process Section */}
       <MaxWidthWrapper className="py-10">
