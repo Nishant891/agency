@@ -100,8 +100,8 @@
 // export const WORKSPACE_LIMIT = 2;
 export const PLANS = [
     {
-        name: "Founder",
-        info: "Developer",
+        // name: "Founder",
+        info: "Developer + CloudOps",
         price: {
             monthly: "Nishant Sharma",
             
@@ -115,16 +115,16 @@ export const PLANS = [
             { text: "Tech Stack", tooltip: "TypeScript React GCP AWS Azure Next.js Cpp Three.js Linux and Various Databases and ORMs" },
         ],
         btn: {
-            text: "Contact",
+            text: "UI/UX Developer",
             href: "https://dematrix.vercel.app/",//Portfolio todo lol
             variant: "purple",
         }
     },
      {
-        name: "CO-Founder",
+        // name: "CO-Founder",
         info: "Developer",
         price: {
-            monthly: "BADAL KUMAR SINGH",
+            monthly: "Badal Kumar Singh",
             
         },
         Products: [

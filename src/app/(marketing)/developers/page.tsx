@@ -1,4 +1,4 @@
-import { AnimationContainer, MaxWidthWrapper, PricingCards } from "@/components";
+import { AnimationContainer, MaxWidthWrapper, DevelopersCard } from "@/components";
 import {
     Accordion,
     AccordionContent,
@@ -24,7 +24,7 @@ const PricingPage = () => {
             </AnimationContainer>
 
             <AnimationContainer delay={0.2}>
-                <PricingCards />
+                <DevelopersCard />
             </AnimationContainer>
 
             <AnimationContainer delay={0.3}>

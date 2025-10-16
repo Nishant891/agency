@@ -18,7 +18,7 @@ import Sidebar from "./dashboard/sidebar";
 import DashboardNavbar from "./dashboard/dashboard-navbar";
 
 // pricing
-import PricingCards from "./pricing-cards";
+import DevelopersCard from "./developer-cards";
 
 // blog
 import Blogs from "./blog/blogs";
@@ -39,7 +39,7 @@ export {
     Sidebar,
     DashboardNavbar,
 
-    PricingCards,
+    DevelopersCard,
 
     Blogs,
 };

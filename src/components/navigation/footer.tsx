@@ -18,7 +18,7 @@ const Footer = () => {
                         <p className="text-muted-foreground mt-4 text-sm text-start">
                            Join us in our Journey!
                         </p>
-                        <span className="mt-4 text-neutral-200 text-sm flex items-center">
+                        <span className="mt-4 text-muted-foreground text-sm flex items-center">
                             Made by <Link href="" className="font-semibold ml-1">Yumeo</Link> 
                         </span> 
                     </div>
