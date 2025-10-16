@@ -1,8 +1,8 @@
 "use client";
-
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
+
 type ThemeContextType = {
   theme: Theme;
   toggleTheme: () => void;
@@ -19,7 +19,14 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   }, []);
 
   useEffect(() => {
-    document.documentElement.className = theme;
+    const root = document.documentElement;
+    
+    // Remove both classes first
+    root.classList.remove("light", "dark");
+    
+    // Add the new theme class
+    root.classList.add(theme);
+    
     localStorage.setItem("theme", theme);
   }, [theme]);
 

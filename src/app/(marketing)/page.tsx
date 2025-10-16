@@ -14,29 +14,22 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { FloatingDock, FloatingDockDemo } from "@/components/ui/floating-dock";
+import { FloatingDockDemo } from "@/components/ui/floating-dock";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import { currentUser } from "@clerk/nextjs/server";
 import {
   ArrowRightIcon,
-  CreditCardIcon,
-  SquareDashedMousePointer,
   StarIcon,
   Triangle,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
-// import { FloatingDockDemo } from "./floatingDock/page";
 
 const HomePage = async () => {
-  const user = await currentUser();
-  const words = ["dedicated", "commited"];
-
   return (
     <div className="overflow-x-hidden scrollbar-hide size-full">
       {/* Hero Section */}
@@ -55,24 +48,18 @@ const HomePage = async () => {
                 </span>
               </span>
             </button>
-            {/* <h1 className="text-foreground tex</div>t-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                        Where Innovation Meets <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                Vision
-                            </span>
-                        </h1> */}
             <h1 className="text-foreground text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-5xl md:text-6xl lg:text-6xl !leading-[1.15] w-full font-heading">
               <span>A dedicated DEVELOPER TEAM</span>
-
               <span> FOR </span>
               <ContainerTextFlip words={["STARTUPS", "BUSINESS", "FOUNDERS"]} />
               <br />
             </h1>
             <p className="mb-10 mt-4 text-md tracking-tight text-muted-foreground md:text-lg text-balance">
               We transform your brand with cutting-edge web design, development,
-              and digital marketing.
+              and smooth deployment.
               <br className="hidden md:block" />
               <span className="hidden md:block">
-                Crafting digital experiences that resonate, inspire, and endure.
+                Crafting experiences that resonate, inspire, and endure.
               </span>
             </p>
             <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
@@ -84,28 +71,6 @@ const HomePage = async () => {
               </Button>
             </div>
           </AnimationContainer>
-
-          {/* <AnimationContainer delay={0.2} className="relative pt-20 pb-20 md:py-32 px-2 bg-transparent w-full">
-                        <div className="absolute md:top-[10%] left-1/2 gradient w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow"></div>
-                        <div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
-                            <BorderBeam
-                                size={250}
-                                duration={12}
-                                delay={9}
-                            />
-
-                            <Image
-                                src="/assets/Profile Screen (1).png"
-                                alt="Dashboard"
-                                width={1200}
-                                height={1200}
-                                quality={100}
-                                className="rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border"
-                            />
-                            <div className="absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40"></div>
-                            <div className="absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50"></div>
-                        </div>
-                    </AnimationContainer> */}
           <AnimationContainer
             delay={0.2}
             className="relative pt-20 pb-20 md:py-32 px-2 bg-transparent w-full"

@@ -70,7 +70,7 @@ const Navbar = () => {
                         <NavigationMenuContent>
                           <ul
                             className={cn(
-                              "grid gap-1 p-4 md:w-[400px] lg:w-[500px] rounded-xl bg-popover text-popover-foreground",
+                              "grid gap-1 p-4 md:w-[400px] lg:w-[500px] rounded-xl !bg-background !text-foreground",
                               link.title === "Products"
                                 ? "lg:grid-cols-[.75fr_1fr]"
                                 : "lg:grid-cols-2"
@@ -78,7 +78,7 @@ const Navbar = () => {
                           >
                             {link.title === "Products" && (
                               <li className="row-span-4 pr-2 relative rounded-lg overflow-hidden">
-                                <div className="absolute inset-0 !z-10 h-full w-[calc(100%-10px)] bg-[linear-gradient(to_right,rgb(38,38,38,0.5)_1px,transparent_1px),linear-gradient(to_bottom,rgb(38,38,38,0.5)_1px,transparent_1px)] bg-[size:1rem_1rem]"></div>
+                                <div className="absolute inset-0 !z-10 h-full w-[calc(100%-10px)] bg-[linear-gradient(to_right,rgb(38,38,38,0.5)_1px,transparent_1px),linear-gradient(to_bottom,rgb(38,38,38,0.5)_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,rgb(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgb(255,255,255,0.1)_1px,transparent_1px)] bg-[size:1rem_1rem]"></div>
                                 <NavigationMenuLink asChild>
                                   <Link
                                     href="/"

@@ -8,7 +8,7 @@ import {
 import MagicBadge from "@/components/ui/magic-badge";
 import { FAQ } from "@/utils/constants/faq";
 
-const PricingPage = () => {
+const DevelopersPage = () => {
     return (
         <MaxWidthWrapper className="mb-40">
             <AnimationContainer delay={0.1}>
@@ -54,4 +54,4 @@ const PricingPage = () => {
     )
 };
 
-export default PricingPage
+export default DevelopersPage

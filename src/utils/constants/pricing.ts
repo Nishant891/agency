@@ -115,7 +115,7 @@ export const PLANS = [
             { text: "Tech Stack", tooltip: "TypeScript React GCP AWS Azure Next.js Cpp Three.js Linux and Various Databases and ORMs" },
         ],
         btn: {
-            text: "UI/UX Developer",
+            text: "Contact",
             href: "https://dematrix.vercel.app/",//Portfolio todo lol
             variant: "purple",
         }
