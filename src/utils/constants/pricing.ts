@@ -119,6 +119,27 @@ export const PLANS = [
             href: "https://dematrix.vercel.app/",//Portfolio todo lol
             variant: "purple",
         }
+    },
+     {
+        name: "CO-Founder",
+        info: "Developer",
+        price: {
+            monthly: "BADAL KUMAR SINGH",
+            
+        },
+        Products: [
+            { text: "Lead Developer & Creator" },
+            { text: "2+ Years of Experience", tooltip:"Specialized in building SaaS platforms and Designing Websites"},
+            { text: "Projects Built", tooltip:"Studynotion, Homely, Customer Review Management System, and other innovative tech solutions." },
+            { text: "Previous Roles", tooltip: "Interned at Afame Technology; Worked at well funded startups." },
+            { text: "SDE-1 & Full Stack Developer"},
+            { text: "Tech Stack", tooltip: "TypeScript React GCP AWS Azure Next.js Node.js Cpp Three.js Linux and Various Databases and ORMs" },
+        ],
+        btn: {
+            text: "Contact",
+            href: "https://badal-kumar-singh-portfolio.vercel.app/",//Portfolio todo lol
+            variant: "purple",
+        }
     }
 ];
 
