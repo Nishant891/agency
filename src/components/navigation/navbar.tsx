@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { buttonVariants } from "@/components/ui/button";
 import {
     NavigationMenu,
@@ -11,15 +12,18 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn, NAV_LINKS } from "@/utils";
-import { useClerk } from "@clerk/nextjs";
 import { LucideIcon, Send } from "lucide-react";
 import Link from "next/link";
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
 
+import { useTheme } from "@/components/providers/theme-provider";
+
 const Navbar = () => {
+    
+  const { theme, toggleTheme } = useTheme();
 
     const [scroll, setScroll] = useState(false);
 
@@ -82,6 +86,7 @@ const Navbar = () => {
                                                                             Products made personaly and for the customers.
                                                                         </p>
                                                                     </Link>
+                                                                    
                                                                 </NavigationMenuLink>
                                                             </li>
                                                         )}
@@ -109,6 +114,22 @@ const Navbar = () => {
                                 ))}
                             </NavigationMenuList>
                         </NavigationMenu>
+                        <button
+                            type="button"
+                            onClick={toggleTheme}
+                            style={{
+                                marginLeft: "1rem",
+                                padding: "0.5rem 1rem",
+                                borderRadius: "8px",
+                                border: "none",
+                                background: theme === "dark" ? "#fff" : "#222",
+                                color: theme === "dark" ? "#222" : "#fff",
+                                cursor: "pointer",
+                            }}
+                            aria-label="Toggle theme"
+                        >
+                            {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                        </button>
 
                         <div className="hidden lg:flex items-center">
                             <div className="flex items-center gap-x-4">

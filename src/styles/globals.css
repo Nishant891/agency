@@ -72,6 +72,30 @@
   }
 }
 
+html.light {
+  --bg: #fff;
+  --text: #222;
+  --card-bg: #f9f9f9;
+  --navbar-bg: #f5f5f5;
+}
+
+html.dark {
+  --bg: #18181b;
+  --text: #fafafa;
+  --card-bg: #232326;
+  --navbar-bg: #222;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+nav {
+  background: var(--navbar-bg);
+}
+
 ::selection {
   background-color: rgba(168, 85, 247, 0.2);
   color: hsl(var(--foreground));

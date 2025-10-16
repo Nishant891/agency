@@ -3,6 +3,10 @@ import { Toaster } from "@/components/ui/sonner";
 import "@/styles/globals.css";
 import { aeonik, cn, generateMetadata, inter } from "@/utils";
 
+import { ThemeProvider } from "@/components/providers/theme-provider";
+
+
+
 export const metadata = generateMetadata();
 
 export default function RootLayout({
@@ -20,8 +24,11 @@ export default function RootLayout({
                 )}
             >
                 <Providers>
+                     <ThemeProvider>
+
                     <Toaster richColors theme="dark" position="top-right" />
                     {children}
+                    </ThemeProvider>
                 </Providers>
             </body>
         </html>
