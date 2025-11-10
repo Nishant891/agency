@@ -21,7 +21,7 @@ import AnimationContainer from "../global/animation-container";
 import { useTheme } from "@/components/providers/theme-provider";
 
 const Navbar = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { resolvedTheme, toggleTheme } = useTheme(); // Use resolvedTheme!
   const [scroll, setScroll] = useState(false);
 
   const handleScroll = () => {
@@ -36,13 +36,13 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "sticky top-0 inset-x-0 h-24 w-full border-b border-transparent z-[99999] select-none transition-colors duration-300",
+        "sticky top-0 inset-x-0 h-24 w-full border-b border-transparent z-[99999] select-none transition-all duration-500",
         scroll
           ? "border-background/80 bg-background/80 backdrop-blur-md"
           : "bg-background/60"
       )}
     >
-      <AnimationContainer reverse delay={0.1} className="size-full">
+      <AnimationContainer reverse delay={0.01} className="size-full">
         <MaxWidthWrapper className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/#home" className="flex items-center">
@@ -121,17 +121,28 @@ const Navbar = () => {
               </NavigationMenuList>
             </NavigationMenu>
 
-            {/* Theme Toggle */}
+            {/* Theme Toggle – FIXED */}
             <button
               onClick={toggleTheme}
-              aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-              className="p-2 rounded-full bg-transparent hover:bg-accent/20 transition-colors duration-200 flex items-center justify-center"
+              aria-label={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
+              className="relative p-2 rounded-full bg-transparent hover:bg-accent/20 transition-colors duration-200 flex items-center justify-center overflow-hidden"
             >
-              {theme === "dark" ? (
-                <Sun className="h-5 w-5 text-foreground transition-transform duration-300" />
-              ) : (
-                <Moon className="h-5 w-5 text-foreground transition-transform duration-300" />
-              )}
+              <Sun
+                className={cn(
+                  "h-5 w-5 text-foreground absolute transition-all duration-300",
+                  resolvedTheme === "dark"
+                    ? "rotate-0 scale-100 opacity-100"
+                    : "rotate-90 scale-0 opacity-0"
+                )}
+              />
+              <Moon
+                className={cn(
+                  "h-5 w-5 text-foreground absolute transition-all duration-300",
+                  resolvedTheme === "dark"
+                    ? "rotate--90 scale-0 opacity-0"
+                    : "rotate-0 scale-100 opacity-100"
+                )}
+              />
             </button>
 
             {/* Contact Button */}

@@ -2,75 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+/* NO GLOBAL TRANSITIONS */
+* {
+  transition: none !important;
+}
+
+/* Only transition when active */
+.theme-transition * {
+  transition: background-color 0.4s ease,
+              color 0.4s ease,
+              border-color 0.4s ease,
+              fill 0.4s ease,
+              stroke 0.4s ease !important;
+}
+
+.no-transitions * {
+  transition: none !important;
+}
+
 @layer base {
-  * {
-    @apply border-border;
-    transition: background-color 0.3s ease, color 0.3s ease,
-      border-color 0.3s ease;
-  }
   :root {
     --foreground: 0 0% 98%;
     --background: 0 0% 3.9%;
-
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
-
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
-
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
-
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-
     --accent: 0 0% 14.9%;
     --accent-foreground: 0 0% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
-
     --radius: 0.5rem;
   }
 
   .dark {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
-
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
-
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
-
     --tertiary: 0 0% 90%;
     --tertiary-foreground: 0 0% 9%;
-
     --subtle: 240 6% 90%;
     --subtle-foreground: 0 0% 9%;
-
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-
     --accent: 0 0% 96.1%;
     --accent-foreground: 0 0% 9%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
@@ -80,9 +74,8 @@
 html {
   scroll-behavior: smooth;
 }
-
 #projects {
-  scroll-margin-top: 6rem; /* Adjust based on your navbar height */
+  scroll-margin-top: 6rem;
 }
 
 html.light {
@@ -91,7 +84,6 @@ html.light {
   --card-bg: #f9f9f9;
   --navbar-bg: #f5f5f5;
 }
-
 html.dark {
   --bg: #18181b;
   --text: #fafafa;
@@ -100,16 +92,13 @@ html.dark {
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  transition: background 0.3s, color 0.3s;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
-
 ::selection {
   background-color: rgba(168, 85, 247, 0.2);
   color: hsl(var(--foreground));
 }
-
 html,
 body {
   font-family: "Inter", sans-serif !important;
@@ -117,24 +106,17 @@ body {
 
 .dumy {
   color: hsl(0 0% 98%);
-  color: rgb(38, 38, 38);
-  /* @apply to-purple-500 */
 }
-
 ::-webkit-scrollbar {
   width: 6px;
-  scrollbar-color: #262626;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #262626;
   border-radius: 3px;
 }
-
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
 }
-
 .gradient {
   background: conic-gradient(
     from 230.29deg at 51.63% 52.16%,
@@ -146,7 +128,12 @@ body {
     rgb(105, 30, 255) 360deg
   );
 }
-
 .not-found {
   box-shadow: rgba(150, 18, 226, 0.3) 5px 5px;
+}
+header,
+nav {
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              backdrop-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
