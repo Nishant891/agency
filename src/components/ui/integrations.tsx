@@ -56,16 +56,16 @@ export function Integrations({
                 </div>
                 <div className="flex flex-col justify-center gap-2">
                     <Circle ref={div1Ref}>
-                        <Icons.apple className="h-6 w-6" />
+                        <Icons.apple className="h-6 w-6 text-black" />
                     </Circle>
                     <Circle ref={div2Ref}>
-                        <Icons.tesla className="h-6 w-6" />
+                        <Icons.tesla className="h-6 w-6 text-black" />
                     </Circle>
                     <Circle ref={div3Ref}>
                         <Icons.microsoft className="h-6 w-6" />
                     </Circle>
                     <Circle ref={div4Ref}>
-                        <Icons.amazon className="h-6 w-6" />
+                        <Icons.amazon className="h-6 w-6 text-black" />
                     </Circle>
                     <Circle ref={div5Ref}>
                         <Icons.google className="h-6 w-6" />

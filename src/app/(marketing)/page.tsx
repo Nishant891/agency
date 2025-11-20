@@ -45,8 +45,28 @@ const HomePage = async () => {
               </span>
             </button>
             <h1 className="text-foreground text-center py-6 text-4xl font-medium tracking-normal text-balance sm:text-5xl md:text-6xl lg:text-6xl !leading-[1.15] w-full font-heading">
-              <span>A dedicated DEVELOPER TEAM</span>
-              <span> FOR </span>
+              <span className="text-white dark:text-black font-semibold">
+                A {""}
+              </span>
+
+              <span
+                className="bg-gradient-to-r from-blue-300 to-gray-900 dark:from-blue-700 dark:to-black
+            bg-clip-text text-transparent font-semibold"
+              >
+                dedicated {""}
+              </span>
+
+              <span
+                className="bg-gradient-to-r from-purple-300 to-gray-900 dark:from-purple-600 dark:to-black
+            bg-clip-text text-transparent font-semibold"
+              >
+                developer {""}
+              </span>
+
+              <span className="text-white dark:text-black font-semibold">
+                team for {""}
+              </span>
+
               <ContainerTextFlip words={["STARTUPS", "BUSINESS", "FOUNDERS"]} />
               <br />
             </h1>
