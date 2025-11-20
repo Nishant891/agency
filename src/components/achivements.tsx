@@ -73,7 +73,7 @@ export function Achievements() {
           Our Journey So Far
         </h2>
         <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-          From college dorms to Bangalore's tech scene - milestones that shaped us
+          From college dorms to Bangalore&apos;s tech scene - milestones that shaped us
         </p>
       </div>
 
