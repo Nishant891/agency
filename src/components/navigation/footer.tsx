@@ -58,17 +58,17 @@ const Footer = () => {
                                 </h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="">
-                                        <Link href="https://x.com/yumeo" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://x.com/yumeo___123" className="hover:text-foreground transition-all duration-300">
                                             Twitter
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="https://www.linkedin.com/company/yumeo" className="hover:text-foreground transition-all duration-300">
-                                            LinkedIn
+                                        <Link href="https://www.youtube.com/@yumeo_dot_tech" className="hover:text-foreground transition-all duration-300">
+                                            Youtube
                                         </Link>
                                     </li>
                                     <li className="mt-2">
-                                        <Link href="https://github.com/yumeo" className="hover:text-foreground transition-all duration-300">
+                                        <Link href="https://github.com/Nishant891" className="hover:text-foreground transition-all duration-300">
                                             Github
                                         </Link>
                                     </li>

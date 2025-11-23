@@ -12,7 +12,7 @@ const DevelopersPage = () => {
              Our Journey So Far{" "}
           </h1>
           <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-            From college dorms to Bangalore's tech scene - milestones that shaped us{" "}
+            From college dorms to Bangalore&apos;s tech scene - milestones that shaped us{" "}
           </p>
         </div>
       </AnimationContainer>

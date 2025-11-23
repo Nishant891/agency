@@ -27,8 +27,8 @@ const PricingSection = () => {
               <li>• Event or Product Showcase</li>
             </ul>
             <div className="mb-6">
-              <div className="text-3xl font-bold text-foreground">₹20,000</div>
-              <div className="text-muted-foreground text-sm">+ ₹5,000/year maintenance</div>
+              <div className="text-3xl font-bold text-foreground">₹10,000</div>
+              <div className="text-muted-foreground text-sm">+ ₹2,000/year maintenance</div>
             </div>
             <Link
               href="mailto:nishant19072003@gmail.com?subject=Inquiry: Static Website"
@@ -62,8 +62,8 @@ const PricingSection = () => {
               <li>• Authenticated User Portals</li>
             </ul>
             <div className="mb-6">
-              <div className="text-3xl font-bold text-foreground">₹50,000</div>
-              <div className="text-muted-foreground text-sm">+ ₹10,000/year maintenance</div>
+              <div className="text-3xl font-bold text-foreground">₹30,000</div>
+              <div className="text-muted-foreground text-sm">+ ₹5,000/year maintenance</div>
             </div>
             <p className="text-xs text-muted-foreground mb-4">
               Built with: <strong>Next.js, tRPC, Supabase, Clerk</strong>
@@ -95,8 +95,8 @@ const PricingSection = () => {
               <li>• API-First Applications</li>
             </ul>
             <div className="mb-6">
-              <div className="text-3xl font-bold text-foreground">₹80,000</div>
-              <div className="text-muted-foreground text-sm">+ ₹15,000/year maintenance</div>
+              <div className="text-3xl font-bold text-foreground">₹50,000</div>
+              <div className="text-muted-foreground text-sm">+ ₹10,000/year maintenance</div>
             </div>
             <p className="text-xs text-muted-foreground mb-4">
               Backend: <strong>Node.js / Python</strong><br />

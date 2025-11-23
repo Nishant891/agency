@@ -67,7 +67,7 @@ const HomePage = async () => {
                 team for {""}
               </span>
 
-              <ContainerTextFlip words={["STARTUPS", "BUSINESS", "FOUNDERS"]} />
+              <ContainerTextFlip words={["Startup", "Business", "Founders"]} />
               <br />
             </h1>
             <p className="mb-10 mt-4 text-md tracking-tight text-muted-foreground md:text-lg text-balance">
@@ -145,7 +145,6 @@ const HomePage = async () => {
         </AnimationContainer>
       </MaxWidthWrapper>
 
-      {/* Products Section */}
       {/* Products Section */}
       <div id="projects">
         {" "}
@@ -239,14 +238,6 @@ const HomePage = async () => {
               </span>
             </div>
           </div>
-          {/* <div className="flex flex-wrap items-start md:items-center justify-center lg:justify-evenly gap-3 mt-4 max-w-5xl mx-auto w-full">
-                        <div className="flex items-center gap-1">
-                            <SquareDashedMousePointer className="" />
-                            <span className="text-muted-foreground">
-                                Ps: hover over the text in the cards to get more info about them :&gt;
-                            </span>
-                        </div>
-                    </div> */}
         </AnimationContainer>
       </MaxWidthWrapper>
 
@@ -366,19 +357,8 @@ const HomePage = async () => {
           </LampContainer>
         </AnimationContainer>
       </MaxWidthWrapper>
-      {/* bs attempt on smth cool */}
-
-      {/* <div className="dark">
-<FloatingDockDemo />
-</div> */}
-
-      {/* <FloatingDockDemo /> */}
     </div>
   );
 };
 
 export default HomePage;
-
-//<span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-
-//</spa
