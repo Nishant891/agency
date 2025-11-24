@@ -62,10 +62,10 @@ export const CARDS = [
   },
   {
     Icon: Rotate3d,
-    name: "Shoppy",
+    name: "Shopy",
     description:
       "A full stack ecommerce application",
-    href: "https://www.fintechsandbox.org/startup/alpha-exchange/",
+    href: "https://shopy-theta.vercel.app/",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
