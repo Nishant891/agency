@@ -2,18 +2,11 @@ import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import {
   Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
 } from "@/components/ui/command";
 import { cn } from "@/utils";
 import {
   ArrowRightIcon,
   CalendarIcon,
-  Link2Icon,
-  SearchIcon,
   WaypointsIcon,
   FileText,
   Rotate3d,
@@ -38,7 +31,7 @@ export const CARDS = [
     Icon: FileText,
     name: "Deckit",
     description: "Create amazing PPTs with AI",
-    href: "https://deckit.ai/workspace", //Link to inquirix
+    href: "https://deckit.ai/",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -105,7 +98,7 @@ export const CARDS = [
     name: "SEC Filings Analysis",
     description:
       "Analyze 10-K, 10-Q, 8-K FORMS 3,4,5 SEC Filings for hundereds of companies",
-    href: "https://sec-filing-analyzer.vercel.app/", //Optix ka site link
+    href: "https://sec-filing-analyzer.vercel.app/",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
     background: (
@@ -118,7 +111,7 @@ export const CARDS = [
   description:
     "Find freelancers near you",
   className: "col-span-3 lg:col-span-1",
-  href: "#",
+  href: "https://brunel0.vercel.app/",
   cta: "Learn more",
   background: (
     <Image 
