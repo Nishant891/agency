@@ -1,8 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
-import {
-  Command,
-} from "@/components/ui/command";
+import { Command } from "@/components/ui/command";
 import { cn } from "@/utils";
 import {
   ArrowRightIcon,
@@ -37,11 +35,18 @@ export const CARDS = [
     background: (
       <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] border border-border border-r-0">
         <CardHeader>
-          <CardTitle>AI powered PPTs</CardTitle>
+          <CardTitle>
+            <div className="flex items-center gap-2">
+              <span>AI powered PPTs</span>
+              <Image width={32} height={32} src="/ppt.svg" alt="PPT Icon" />
+            </div>
+          </CardTitle>
+
           <CardDescription>
             Create and edit amazing PPTs with AI
           </CardDescription>
         </CardHeader>
+
         <CardContent className="-mt-4">
           <Label>Upload Documents</Label>
           <Input
@@ -56,8 +61,7 @@ export const CARDS = [
   {
     Icon: Rotate3d,
     name: "Shopy",
-    description:
-      "A full stack ecommerce application",
+    description: "A full stack ecommerce application",
     href: "https://shopy-theta.vercel.app/",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -66,27 +70,32 @@ export const CARDS = [
         <Input placeholder="Search books, gadgets, t-shirts..." />
         <div className="mt-1 cursor-pointer">
           <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
-            <span>Nike Shoe</span>
+            <span>👟 Nike Shoe</span>
             <span className="text-green-600 text-sm">$230</span>
           </div>
+
           <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
-            <span>Black Hoodie</span>
+            <span>🧥 Black Hoodie</span>
             <span className="text-blue-600 text-sm">$20</span>
           </div>
+
           <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
-            <span>ASUS Laptop</span>
+            <span>💻 ASUS Laptop</span>
             <span className="text-orange-600 text-sm">$4215</span>
           </div>
+
           <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
-            <span>The Alchemist</span>
+            <span>📚 The Alchemist</span>
             <span className="text-purple-600 text-sm">$8</span>
           </div>
+
           <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
-            <span>Risk Management</span>
+            <span>📉 Risk Management</span>
             <span className="text-red-600 text-sm">VaR: -$2.1K</span>
           </div>
+
           <div className="px-4 py-2 hover:bg-muted rounded-md flex justify-between items-center">
-            <span>AI Trade Signals</span>
+            <span>🤖 AI Trade Signals</span>
             <span className="text-green-600 text-sm">Strong Buy</span>
           </div>
         </div>
@@ -95,10 +104,10 @@ export const CARDS = [
   },
   {
     Icon: WaypointsIcon,
-    name: "SEC Filings Analysis",
+    name: "JWT Authx",
     description:
-      "Analyze 10-K, 10-Q, 8-K FORMS 3,4,5 SEC Filings for hundereds of companies",
-    href: "https://sec-filing-analyzer.vercel.app/",
+      "An npm package published by our organization downloaded more then 200 times",
+    href: "https://www.npmjs.com/package/jwt-authx",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
     background: (
@@ -106,23 +115,22 @@ export const CARDS = [
     ),
   },
   {
-  Icon: CalendarIcon,
-  name: "Brunel",
-  description:
-    "Find freelancers near you",
-  className: "col-span-3 lg:col-span-1",
-  href: "https://brunel0.vercel.app/",
-  cta: "Learn more",
-  background: (
-    <Image 
-      alt="Brunel" 
-      src="/brunel.png" 
-      width={300} 
-      height={400}
-      className="absolute border-2 border-gray-400 right-10 top-10 origin-top rounded-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] object-cover"
-    />
-  ),
-},
+    Icon: CalendarIcon,
+    name: "Brunel",
+    description: "Find freelancers near you",
+    className: "col-span-3 lg:col-span-1",
+    href: "https://brunel0.vercel.app/",
+    cta: "Learn more",
+    background: (
+      <Image
+        alt="Brunel"
+        src="/brunel.png"
+        width={300}
+        height={400}
+        className="absolute right-10 top-10 origin-top rounded-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] object-contain"
+      />
+    ),
+  },
 ];
 
 const BentoGrid = ({
@@ -165,10 +173,16 @@ const BentoCard = ({
     <div>{background}</div>
     <div className="pointer-events-none z-10 flex flex-col gap-1 p-6 transition-all duration-300 -translate-y-10">
       <Icon className="h-12 w-12 origin-left text-neutral-700" />
-      <h3 className="text-xl font-semibold text-neutral-300 dark:text-neutral-700">{name}</h3>
-      <p className="max-w-lg text-neutral-400 dark:text-neutral-500">{description}</p>
+      <h3 className="text-xl font-semibold text-neutral-300 dark:text-neutral-700">
+        {name}
+      </h3>
+      <p className="max-w-lg text-neutral-400 dark:text-neutral-500">
+        {description}
+      </p>
     </div>
-    <div className={cn("absolute bottom-0 flex w-full flex-row items-center p-4")}>
+    <div
+      className={cn("absolute bottom-0 flex w-full flex-row items-center p-4")}
+    >
       <Link
         href={href}
         className={buttonVariants({
