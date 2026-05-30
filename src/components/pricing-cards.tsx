@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, Zap, Globe, Server } from "lucide-react";
+import { Zap, Globe, Server } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/utils";
 import Link from "next/link";
@@ -10,11 +10,11 @@ const PricingSection = () => {
     <section className="py-20 bg-background">
       <div className="container px-4 mx-auto">
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
           {/* 1. Static Websites */}
-          <div className="border border-border rounded-2xl p-8 bg-card hover:bg-accent/5 transition-colors">
+          <div className="flex flex-col border border-border rounded-2xl p-8 bg-card hover:bg-accent/5 transition-colors h-full">
             <div className="flex items-center mb-4">
-              <Globe className="h-6 w-6 text-orange-500 mr-2" />
+              <Globe className="h-6 w-6 text-purple-500 mr-2" />
               <h3 className="text-xl font-bold text-foreground">Static Website</h3>
             </div>
             <p className="text-muted-foreground mb-6 text-sm">
@@ -28,13 +28,12 @@ const PricingSection = () => {
             </ul>
             <div className="mb-6">
               <div className="text-3xl font-bold text-foreground">₹10,000</div>
-              <div className="text-muted-foreground text-sm">+ ₹2,000/year maintenance</div>
             </div>
             <Link
               href="mailto:nishant19072003@gmail.com?subject=Inquiry: Static Website"
               className={cn(
                 buttonVariants({ variant: "outline" }),
-                "w-full py-5 font-medium"
+                "w-full py-5 font-medium mt-auto"
               )}
             >
               Get Started
@@ -42,14 +41,14 @@ const PricingSection = () => {
           </div>
 
           {/* 2. Dynamic Websites (Featured) */}
-          <div className="relative border-2 border-orange-500 rounded-2xl p-8 bg-card shadow-lg">
+          <div className="relative flex flex-col border-2 border-purple-500 rounded-2xl p-8 bg-card shadow-lg h-full">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-orange-500 text-white text-xs font-bold px-4 py-1 rounded-full">
+              <span className="bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-full">
                 MOST POPULAR
               </span>
             </div>
             <div className="flex items-center mb-4">
-              <Zap className="h-6 w-6 text-orange-500 mr-2" />
+              <Zap className="h-6 w-6 text-purple-500 mr-2" />
               <h3 className="text-xl font-bold text-foreground">Dynamic Website</h3>
             </div>
             <p className="text-muted-foreground mb-6 text-sm">
@@ -63,7 +62,6 @@ const PricingSection = () => {
             </ul>
             <div className="mb-6">
               <div className="text-3xl font-bold text-foreground">₹30,000</div>
-              <div className="text-muted-foreground text-sm">+ ₹5,000/year maintenance</div>
             </div>
             <p className="text-xs text-muted-foreground mb-4">
               Built with: <strong>Next.js, tRPC, Supabase, Clerk</strong>
@@ -72,7 +70,7 @@ const PricingSection = () => {
               href="mailto:nishant19072003@gmail.com?subject=Inquiry: Dynamic Website"
               className={cn(
                 buttonVariants({ variant: "primary" }),
-                "w-full py-5 font-medium bg-orange-500 hover:bg-orange-600 text-white"
+                "w-full py-5 font-medium bg-purple-500 hover:bg-purple-600 text-white mt-auto"
               )}
             >
               Build My App
@@ -80,9 +78,9 @@ const PricingSection = () => {
           </div>
 
           {/* 3. Full-Stack Application */}
-          <div className="border border-border rounded-2xl p-8 bg-card hover:bg-accent/5 transition-colors">
+          <div className="flex flex-col border border-border rounded-2xl p-8 bg-card hover:bg-accent/5 transition-colors h-full">
             <div className="flex items-center mb-4">
-              <Server className="h-6 w-6 text-orange-500 mr-2" />
+              <Server className="h-6 w-6 text-purple-500 mr-2" />
               <h3 className="text-xl font-bold text-foreground">Full-Stack App</h3>
             </div>
             <p className="text-muted-foreground mb-6 text-sm">
@@ -95,8 +93,7 @@ const PricingSection = () => {
               <li>• API-First Applications</li>
             </ul>
             <div className="mb-6">
-              <div className="text-3xl font-bold text-foreground">₹50,000</div>
-              <div className="text-muted-foreground text-sm">+ ₹10,000/year maintenance</div>
+              <div className="text-3xl font-bold text-foreground">Custom Pricing</div>
             </div>
             <p className="text-xs text-muted-foreground mb-4">
               Backend: <strong>Node.js / Python</strong><br />
@@ -107,20 +104,12 @@ const PricingSection = () => {
               href="mailto:nishant19072003@gmail.com?subject=Inquiry: Full-Stack Application"
               className={cn(
                 buttonVariants({ variant: "outline" }),
-                "w-full py-5 font-medium"
+                "w-full py-5 font-medium mt-auto"
               )}
             >
               Discuss Project
             </Link>
           </div>
-        </div>
-
-        {/* Footer Note */}
-        <div className="mt-16 text-center max-w-3xl mx-auto">
-          <p className="text-muted-foreground text-sm">
-            All projects include source code, documentation, deployment, and 30 days of post-launch support.  
-            Maintenance includes updates, security patches, and minor tweaks.
-          </p>
         </div>
       </div>
     </section>

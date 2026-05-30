@@ -30,7 +30,7 @@ export const CARDS = [
     name: "Deckit",
     description: "Create amazing PPTs with AI",
     href: "https://deckit.ai/",
-    cta: "Learn more",
+    cta: "Visit",
     className: "col-span-3 lg:col-span-1",
     background: (
       <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] border border-border border-r-0">
@@ -63,7 +63,7 @@ export const CARDS = [
     name: "Shopy",
     description: "A full stack ecommerce application",
     href: "https://shopy-theta.vercel.app/",
-    cta: "Learn more",
+    cta: "Visit",
     className: "col-span-3 lg:col-span-2",
     background: (
       <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] p-2">
@@ -108,7 +108,7 @@ export const CARDS = [
     description:
       "An npm package published by our organization downloaded more then 200 times",
     href: "https://www.npmjs.com/package/jwt-authx",
-    cta: "Learn more",
+    cta: "Visit",
     className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
     background: (
       <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)]" />
@@ -120,7 +120,7 @@ export const CARDS = [
     description: "Find freelancers near you",
     className: "col-span-3 lg:col-span-1",
     href: "https://brunel0.vercel.app/",
-    cta: "Learn more",
+    cta: "Visit",
     background: (
       <Image
         alt="Brunel"
@@ -172,11 +172,11 @@ const BentoCard = ({
   <BentoCardHover className={className}>
     <div>{background}</div>
     <div className="pointer-events-none z-10 flex flex-col gap-1 p-6 transition-all duration-300 -translate-y-10">
-      <Icon className="h-12 w-12 origin-left text-neutral-700" />
-      <h3 className="text-xl font-semibold text-neutral-300 dark:text-neutral-700">
+      <Icon className="h-9 w-9 origin-left text-neutral-200 dark:text-neutral-700" />
+      <h3 className="text-base font-semibold text-neutral-300 dark:text-neutral-700">
         {name}
       </h3>
-      <p className="max-w-lg text-neutral-400 dark:text-neutral-500">
+      <p className="max-w-lg text-sm text-neutral-400 dark:text-neutral-500">
         {description}
       </p>
     </div>
@@ -188,7 +188,8 @@ const BentoCard = ({
         className={buttonVariants({
           size: "sm",
           variant: "ghost",
-          className: "cursor-pointer text-white dark:text-black",
+          className:
+            "cursor-pointer text-sm text-white dark:text-black hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white !transition-colors !duration-300",
         })}
       >
         {cta}

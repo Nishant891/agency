@@ -100,44 +100,62 @@
 // export const WORKSPACE_LIMIT = 2;
 export const PLANS = [
     {
-        // name: "Founder",
         info: "Developer + CloudOps",
         price: {
             monthly: "Nishant Sharma",
-            
         },
+        image: "/nishant.jpg",
         Products: [
             { text: "Lead Developer & Creator" },
-            { text: "3+ Years of Experience", tooltip:"Specialized in building SaaS platforms and Designing Websites"},
-            { text: "Projects Built", tooltip:"Deckit, Alpha Exchange, SEC Filing Analyzer, and other innovative tech solutions." },
+            { text: "3+ Years of Experience", tooltip: "Specialized in building SaaS platforms and Designing Websites" },
+            { text: "Projects Built", tooltip: "Deckit, Alpha Exchange, SEC Filing Analyzer, and other innovative tech solutions." },
             { text: "Previous Roles", tooltip: "Interned at Nutanix; Worked at well funded startups." },
-            { text: "SRE & Full Stack Developer"},
+            { text: "SRE & Full Stack Developer" },
             { text: "Tech Stack", tooltip: "TypeScript React GCP AWS Azure Next.js Cpp Three.js Linux and Various Databases and ORMs" },
         ],
         btn: {
             text: "Contact",
-            href: "https://dematrix.vercel.app/",//Portfolio todo lol
+            href: "https://dematrix.vercel.app/",
             variant: "purple",
         }
     },
-     {
-        // name: "CO-Founder",
+    {
         info: "Developer",
         price: {
             monthly: "Badal Kumar Singh",
-            
         },
+        image: "/badal.jpeg",
         Products: [
             { text: "Lead Developer & Creator" },
-            { text: "2+ Years of Experience", tooltip:"Specialized in building SaaS platforms and Designing Websites"},
-            { text: "Projects Built", tooltip:"Studynotion, Homely, Customer Review Management System, and other innovative tech solutions." },
+            { text: "2+ Years of Experience", tooltip: "Specialized in building SaaS platforms and Designing Websites" },
+            { text: "Projects Built", tooltip: "Studynotion, Homely, Customer Review Management System, and other innovative tech solutions." },
             { text: "Previous Roles", tooltip: "Interned at Afame Technology; Worked at well funded startups." },
-            { text: "SDE-1 & Full Stack Developer"},
+            { text: "SDE-1 & Full Stack Developer" },
             { text: "Tech Stack", tooltip: "TypeScript React GCP AWS Azure Next.js Node.js Cpp Three.js Linux and Various Databases and ORMs" },
         ],
         btn: {
             text: "Contact",
-            href: "https://badal-kumar-singh-portfolio.vercel.app/",//Portfolio todo lol
+            href: "https://badal-kumar-singh-portfolio.vercel.app/",
+            variant: "purple",
+        }
+    },
+    {
+        info: "Intern",
+        price: {
+            monthly: "Nimesh Sharma",
+        },
+        image: "/nimesh.jpeg",
+        Products: [
+            { text: "Software Development Intern" },
+            { text: "Learning Full-Stack Development", tooltip: "Exploring the modern web stack and shipping real-world features." },
+            { text: "Projects Built", tooltip: "Contributing to internal tools and user-facing modules across the team's projects." },
+            { text: "Currently Exploring", tooltip: "Web fundamentals, TypeScript, React, and backend with Node.js." },
+            { text: "Front-End Focused Developer" },
+            { text: "Tech Stack", tooltip: "JavaScript, TypeScript, React, Next.js, Tailwind, Node.js, and learning more every day." },
+        ],
+        btn: {
+            text: "Contact",
+            href: "#",
             variant: "purple",
         }
     }

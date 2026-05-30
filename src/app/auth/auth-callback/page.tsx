@@ -1,23 +1,15 @@
 "use client";
 
-import { getAuthStatus } from "@/actions";
-import { useQuery } from "@tanstack/react-query";
 import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const AuthCallbackPage = () => {
 
     const router = useRouter();
 
-    const { data } = useQuery({
-        queryKey: ["auth-status"],
-        queryFn: async () => await getAuthStatus(),
-        retry: true,
-        retryDelay: 500,
-    });
-
-    if (data?.success) {
-        router.push("/dashboard");
-    }
+    useEffect(() => {
+        router.push("/");
+    }, [router]);
 
     return (
         <div className="flex items-center justify-center flex-col h-screen relative">

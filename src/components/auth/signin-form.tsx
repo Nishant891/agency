@@ -2,72 +2,27 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useSignIn } from '@clerk/nextjs';
 import { Eye, EyeOff, LoaderIcon } from "lucide-react";
-import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { toast } from "sonner";
 import { Label } from "../ui/label";
 
 const SignInForm = () => {
 
-    const router = useRouter();
-
-    const { signIn, isLoaded, setActive } = useSignIn();
-
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
     const [showPassword, setShowPassword] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
-    const handleSignIn = async (e: React.FormEvent) => {
+    const handleSignIn = (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (!isLoaded) return;
-
         if (!email || !password) {
-            setIsLoading(false);
             toast.error("Email and password are required!");
             return;
         }
 
-        setIsLoading(true);
-
-        try {
-            const signInAttempt = await signIn.create({
-                identifier: email,
-                password,
-                redirectUrl: "/auth/auth-callback",
-            });
-
-            if (signInAttempt.status === "complete") {
-                await setActive({
-                    session: signInAttempt.createdSessionId,
-                });
-                router.push("/auth/auth-callback");
-            } else {
-                console.log(JSON.stringify(signInAttempt, null, 2));
-                toast.error("Invalid email or password");
-                setIsLoading(false);
-            }
-        } catch (error: any) {
-            switch (error.errors[0]?.code) {
-                case "form_identifier_not_found":
-                    toast.error("This email is not registered. Please sign up first.");
-                    break;
-                case "form_password_incorrect":
-                    toast.error("Incorrect password. Please try again.");
-                    break;
-                case "too_many_attempts":
-                    toast.error("Too many attempts. Please try again later.");
-                    break;
-                default:
-                    toast.error("An error occurred. Please try again");
-                    break;
-            }
-        } finally {
-            setIsLoading(false);
-        }
+        toast.info("Sign in is not available on this site.");
     };
 
     return (
@@ -85,7 +40,7 @@ const SignInForm = () => {
                         id="email"
                         type="email"
                         value={email}
-                        disabled={!isLoaded || isLoading}
+                        disabled={isLoading}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email"
                         className="w-full focus-visible:border-foreground"
@@ -100,7 +55,7 @@ const SignInForm = () => {
                             id="password"
                             type={showPassword ? "text" : "password"}
                             value={password}
-                            disabled={!isLoaded || isLoading}
+                            disabled={isLoading}
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Enter your password"
                             className="w-full focus-visible:border-foreground"
@@ -109,7 +64,7 @@ const SignInForm = () => {
                             type="button"
                             size="icon"
                             variant="ghost"
-                            disabled={!isLoaded || isLoading}
+                            disabled={isLoading}
                             className="absolute top-1 right-1"
                             onClick={() => setShowPassword(!showPassword)}
                         >
@@ -123,7 +78,7 @@ const SignInForm = () => {
                 <div className="mt-4 w-full">
                     <Button
                         type="submit"
-                        disabled={!isLoaded || isLoading}
+                        disabled={isLoading}
                         className="w-full"
                     >
                         {isLoading ? (

@@ -20,7 +20,7 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import { ArrowRightIcon, StarIcon, Triangle } from "lucide-react";
+import { Send, StarIcon, Triangle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
@@ -79,10 +79,28 @@ const HomePage = async () => {
               </span>
             </p>
             <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
-              <Button className="px-6 py-4 rounded-full" asChild>
-                <Link href="/pricing" className="flex items-center">
-                  Plans & Pricing
-                  <ArrowRightIcon className="w-4 h-4 ml-2" />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="h-14 w-14 object-contain bg-transparent"
+              >
+                {/* WebM with VP9 alpha channel — true transparency, no CSS keying needed. */}
+                <source src="/chatbot.webm" type="video/webm" />
+                <source src="/chatbot.mp4" type="video/mp4" />
+              </video>
+              <Button
+                size="lg"
+                className="bg-purple-500 hover:bg-purple-600 text-white rounded-full text-base"
+                asChild
+              >
+                <Link
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=nishant19072003@gmail.com"
+                  className="flex items-center gap-2"
+                >
+                  Talk to us
+                  <Send className="h-4 w-4 fill-white" />
                 </Link>
               </Button>
             </div>
@@ -116,6 +134,7 @@ const HomePage = async () => {
       </MaxWidthWrapper>
 
       {/* Companies Section */}
+      {/*
       <MaxWidthWrapper>
         <AnimationContainer delay={0.4}>
           <div className="py-14">
@@ -133,8 +152,7 @@ const HomePage = async () => {
                         width={80}
                         height={80}
                         quality={100}
-                        className="w-28 h-auto dark:invert" // Invert colors in dark mode
-                        // OR potentially use brightness: dark:brightness(0.1) if inverting doesn't look right
+                        className="w-28 h-auto dark:invert"
                       />
                     </li>
                   ))}
@@ -144,6 +162,7 @@ const HomePage = async () => {
           </div>
         </AnimationContainer>
       </MaxWidthWrapper>
+      */}
 
       {/* Products Section */}
       <div id="projects">
@@ -242,6 +261,7 @@ const HomePage = async () => {
       </MaxWidthWrapper>
 
       {/* Reviews Section */}
+      {/*
       <MaxWidthWrapper className="py-10">
         <AnimationContainer delay={0.1}>
           <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
@@ -339,9 +359,10 @@ const HomePage = async () => {
           </div>
         </div>
       </MaxWidthWrapper>
+      */}
 
       {/* CTA Section */}
-      <MaxWidthWrapper className="mt-20 max-w-[100vw] overflow-x-hidden scrollbar-hide">
+      <MaxWidthWrapper className="py-10 max-w-[100vw] overflow-x-hidden scrollbar-hide">
         <AnimationContainer delay={0.1}>
           <LampContainer>
             <div className="flex flex-col items-center justify-center relative w-full text-center">

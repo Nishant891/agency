@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,7 +12,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn, NAV_LINKS } from "@/utils";
-import { LucideIcon, Send, Sun, Moon } from "lucide-react";
+import { ArrowRightIcon, LucideIcon, Sun, Moon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import MaxWidthWrapper from "../global/max-width-wrapper";
@@ -145,18 +145,14 @@ const Navbar = () => {
               />
             </button>
 
-            {/* Contact Button */}
+            {/* Plans & Pricing Button */}
             <div className="hidden lg:flex">
-              <Link
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=nishant19072003@gmail.com"
-                className={cn(
-                  buttonVariants({ variant: "primary" }),
-                  "bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full flex items-center gap-2"
-                )}
-              >
-                Get in Touch
-                <Send className="h-3.5 w-3.5 fill-white" />
-              </Link>
+              <Button size="lg" className="rounded-full text-base" asChild>
+                <Link href="/pricing" className="flex items-center gap-2">
+                  Plans & Pricing
+                  <ArrowRightIcon className="w-4 h-4" />
+                </Link>
+              </Button>
             </div>
 
             <MobileNavbar />
