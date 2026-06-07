@@ -79,17 +79,22 @@ const HomePage = async () => {
               </span>
             </p>
             <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="h-14 w-14 object-contain bg-transparent"
+              <a
+                href="https://wa.me/919972683674"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {/* WebM with VP9 alpha channel — true transparency, no CSS keying needed. */}
-                <source src="/chatbot.webm" type="video/webm" />
-                <source src="/chatbot.mp4" type="video/mp4" />
-              </video>
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="h-14 w-14 object-contain bg-transparent"
+                >
+                  <source src="/chatbot.webm" type="video/webm" />
+                  <source src="/chatbot.mp4" type="video/mp4" />
+                </video>
+              </a>
               <Button
                 size="lg"
                 className="bg-purple-500 hover:bg-purple-600 text-white rounded-full text-base"
